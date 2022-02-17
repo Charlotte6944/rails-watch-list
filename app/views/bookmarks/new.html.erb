@@ -1,0 +1,9 @@
+<h1 class= "my-4 text-center">Bookmarks</h1>
+
+<div class="container">
+<%= simple_form_for [ @list, @bookmark ] do |f| %>
+  <%= f.input :comment %>
+  <%= f.association :movie %>
+  <%= f.button :submit, class: "btn btn-primary w-100 rounded mt-4" %>
+<% end %>
+</div>
