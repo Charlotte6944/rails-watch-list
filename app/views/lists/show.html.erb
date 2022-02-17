@@ -4,6 +4,7 @@
   <p><% @list.bookmarks.each do |bookmark| %>
     <li>
     <%= bookmark.movie.title %>
+    <%= link_to "Destroy this movie", bookmark_path(bookmark) %>
     </li>
   <% end %></p>
 </ul>
