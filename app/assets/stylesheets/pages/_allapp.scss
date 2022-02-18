@@ -1,0 +1,10 @@
+footer {
+  height: 8vh;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none !important;
+  }
+}

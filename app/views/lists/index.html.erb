@@ -1,13 +1,15 @@
-<div class="card bg-dark text-white">
-  <%= image_tag "movie.jpg", alt: "cinema", class:"img-fluid card-img" %>
+<div class="banner">
+  <div class="container text-center text-middle">
+    <h1>Your lists of movies!</h1>
+  </div>
 </div>
 
-
-
-<ul>
+<div class="card-flex">
 <% @lists.each do |list| %>
-  <li>
-  <%= link_to list.name, list_path(list) %>
-  </li>
+  <div class=" container card-home" style="width: 18rem;">
+  <div class="card-name">
+    <%= link_to list.name, list_path(list) %>
+  </div>
+  </div>
 <% end %>
-</ul>
+</div>

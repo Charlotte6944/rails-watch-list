@@ -1,0 +1,31 @@
+.card-home {
+  background-image: asset_url(movie);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 5rem;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60rem;
+  margin: 0 auto;
+}
+
+.card-name {
+  text-align: center;
+  a {
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  a:hover {
+
+  }
+}
