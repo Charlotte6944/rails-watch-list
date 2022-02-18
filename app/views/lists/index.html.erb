@@ -1,4 +1,8 @@
-<h1>List</h1>
+<div class="card bg-dark text-white">
+  <%= image_tag "movie.jpg", alt: "cinema", class:"img-fluid card-img" %>
+</div>
+
+
 
 <ul>
 <% @lists.each do |list| %>
@@ -7,5 +11,3 @@
   </li>
 <% end %>
 </ul>
-
-<%= link_to "Create a new list", new_list_path %>
